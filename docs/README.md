@@ -39,27 +39,6 @@ Url: `https://api.every-sense.com:8001`
 <label class="label danger">失敗</label>
 `{"code":-2, "reason":"invalid user or password"}`
 
-## クライアントパッケージ
-現在EverysenseはRubyとPython3で作ったクライアントパッケージを提供しております。
-
-Python3([ソースコード](https://github.com/daiyanze/everyclient)):
-
-```
-pip install everyclient
-```
-
-or
-
-```
-pip3 install everyclient
-```
-
-
-Ruby([ソースコード](https://github.com/every-sense/open-es)):
-
-```
-git clone https://github.com/every-sense/open-es.git
-```
 
 ## 認証API
 #### 新規ユーザー作成
