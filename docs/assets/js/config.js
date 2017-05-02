@@ -11,12 +11,12 @@ docute.init({
   nav: {
     default: [
       {title: 'API説明書', path: '/'},
-      {title: '変更履歴', path: '/changelog'},
+      {title: '変更履歴', path: '/CHANGELOG'},
       {title: '日本語', type: 'dropdown', items: langs}
     ],
     'lang/en': [
       {title: 'API Reference', path: '/lang/en/'},
-      {title: 'ChangeLog', path: '/changelog'},
+      {title: 'ChangeLog', path: '/CHANGELOG'},
       {title: 'English', type: 'dropdown', items: langs}
     ]
   }
