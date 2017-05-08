@@ -1,7 +1,3 @@
-var langs = [
-  {title: '日本語', path:'/', matchPath: /^\/(home)/},
-  {title: 'English', path: '/lang/en/', matchPath: /^\/en/}
-];
 
 docute.init({
   repo: 'every-sense/UserDocument',
@@ -12,13 +8,7 @@ docute.init({
   nav: {
     default: [
       {title: 'API説明書', path: '/'},
-      {title: 'ChangeLog', path: '/changelog'},
-      {title: '日本語', type: 'dropdown', items: langs}
-    ],
-    'lang/en': [
-      {title: 'API Reference', path: '/lang/en/'},
-      {title: 'ChangeLog', path: '/changelog'},
-      {title: 'English', type: 'dropdown', items: langs}
+      {title: 'ChangeLog', path: '/changelog'}
     ]
   }
 })
