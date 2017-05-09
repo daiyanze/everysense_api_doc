@@ -1,6 +1,6 @@
 const pages = [
   'auth', 'session', 'message', 'order', 'device', 'sensor', 'farm',
-  'farmowner', 'owner', 'autoaccept', 'notification', 'output',
+  'farmowner', 'owner', 'autoaccept', 'notification', 'output', 'recipe',
 ];
 
 var langs = {
@@ -21,9 +21,10 @@ var langs = {
       farm: 'Farm',
       farmowner: 'Farm Owner',
       owner: 'Owner',
-      autoaccept: 'Autoaccept',
+      autoaccept: 'Auto-accept',
       notification: 'Notification',
       output: 'Output',
+      recipe: 'Recipe',
     }
   },
   '日本語': {
@@ -46,12 +47,13 @@ var langs = {
       autoaccept: '自動承認',
       notification: '通知',
       output: 'データ出力',
+      recipe: 'レシピ',
     }
   }
 };
 
 var dropDownItems = [
-  {title: '日本語', path:'/', matchPath: /^\//},
+  {title: '日本語', path:'/', matchPath: /^\/(home|api|changelog)/},
   {title: 'English', path: '/lang/en/', matchPath: /^\/en/},
 ];
 

@@ -6,9 +6,7 @@ title: Everysense API ドキュメント
 # Everysense API ドキュメント
 本ドキュメントでは、EverySenseサーバと通信するためのAPI解説を行います
 
-## はじめに
-
-### 概要
+## 概要
 
 デバイスとEverysense Serverとの通信は、デバイスゲートウェイを通じて行われます。
 
@@ -19,7 +17,9 @@ Everysense Serverlがデバイスと正しく通信するためには、デバ�
 3. (必要なら)デバイスの認証
 4. Everysense Serverの必要に応じて、デバイスへのpush
 
-### Everysense APIの基本
+<br>
+
+## Everysense APIの基本
 デバイスゲートウェイとEverysense Serverとの間の通信は、全て MessagePack RPC を使います。
 
 [MessagePack](http://msgpack.org) および [MessagePack RPC](https://github.com/msgpack-rpc/msgpack-rpc) についての詳しい説明については、当該ページを御覧下さい。仕様については、[MessagePack specification](https://github.com/msgpack/msgpack/blob/master/spec.md) にあります。
@@ -45,26 +45,30 @@ Everysense Serverlがデバイスと正しく通信するためには、デバ�
 
 Url: `https://api.every-sense.com:8001`
 
-### API返り値
+<br>
+
+## API返り値
 Everysense APIの返り値は `code` `data` `reason` `message` `trace` 四つの部分に組み立てられます。
 `code`が負数の場合、`data`の代わりに `reason` `message` `trace` が返り値に参入します。
 
 コード(code)
-* 0 : 成功
+* 0 : success
 * -1 : リソース不存在
 * -2 : 認証失敗
 * -10 : パラメーター誤用または漏らし 
 * -20 : システムエラー
 
-### Example
+<br>
+
+## Example
 自分のアカウントでユーザーUUIDを取得する場合
 <label class="label">POST</label>`https://api.every-sense.com:8001/auth_user`
 
 リクエストボディー:
 ```
 [
-    "someone",
-    "password123"
+    "someone", // ログインID
+    "password123" // パスワード
 ]
 ```
 
@@ -76,4 +80,5 @@ Everysense APIの返り値は `code` `data` `reason` `message` `trace` 四つの
 <label class="label danger">失敗</label>
 `{"code":-2, "reason":"invalid user or password"}`
 
+<br>
 <br>

@@ -3,8 +3,8 @@ search: ja
 title: Everysense セッションAPI
 ---
 
-## セションAPI
-### 認証用のセション作成
+## セッションAPI
+### 認証用のセッション作成
 <label class="label">POST</label>`/create_session`
 
 ``` 
@@ -33,7 +33,7 @@ title: Everysense セッションAPI
 ```
 <br>
 
-### セション有効性検査
+### セッション有効性検査
 <label class="label">POST</label>`/check_session`
 ``` 
 [
@@ -57,7 +57,7 @@ title: Everysense セッションAPI
 ```
 <br>
 
-### セション無効化
+### セッション無効化
 <label class="label">POST</label>`/delete_session`
 ``` 
 [
