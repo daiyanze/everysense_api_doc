@@ -42,10 +42,10 @@ nav['lang/en'] = [
 ];
 
 docute.init({
-  repo: 'every-sense/UserDocument',
+  repo: 'every-sense/everysense_api_doc',
   tocVisibleDepth: 4,
   debug: false,
   sidebar: true,
-  'edit-link': 'https://github.com/daiyanze/everysense_api_doc/tree/master/docs/',
+  'edit-link': 'https://github.com/every-sense/everysense_api_doc/tree/master/docs/',
   nav: nav,
 });
