@@ -53,7 +53,7 @@ var langs = {
 };
 
 var dropDownItems = [
-  {title: '日本語', path:'/', matchPath: /^\/(home|api|changelog)/},
+  {title: '日本語', path:'/', matchPath: /^\/(home)/},
   {title: 'English', path: '/lang/en/', matchPath: /^\/en/},
 ];
 
