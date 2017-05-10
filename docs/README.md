@@ -74,11 +74,71 @@ Everysense APIの返り値は `code` `data` `reason` `message` `trace` 四つの
 返り値:
 
 <label class="label success">成功</label>
-`{"code":0, "uuid":"1ec1075c-c7d1-47ee-a601-6cd5e6170d5e"}`
+```
+{
+    "code":0,
+    "uuid":"1ec1075c-c7d1-47ee-a601-6cd5e6170d5e"
+}
+```
 
 <label class="label danger">失敗</label>
-`{"code":-2, "reason":"invalid user or password"}`
+```
+{
+    "code":-2,
+    "reason":"invalid user or password"
+}
+```
 
 <br>
+
+## Rest API クライアント・パッケージ
+
+#### Ruby 2.x
+
+パッケージリンク先: [_Open-ES_](https://github.com/every-sense/open-es)
+
+インストール:
+``` bash
+git clone https://github.com/every-sense/open-es.git
+```
+
+使い方:
+``` ruby
+require 'EverySense'
+
+client = EverySense::JsonClient.new
+client.auth_user("someone", "password123")
+```
+
+返り値:
+```
+{'code': 0, 'uuid': '1ec1075c-c7d1-47ee-a601-6cd5e6170d5e'}
+```
 <br>
 
+#### Python 3.x
+
+パッケージリンク先: [_everyclient_](https://github.com/daiyanze/everyclient)
+
+インストール:
+``` bash
+pip install everyclient
+
+or
+
+pip3 install everyclient
+```
+
+使い方:
+``` python
+from everyclient import EveryClient
+
+EveryClient().auth_user(["someone","password123"])
+```
+
+返り値:
+```
+{'code': 0, 'uuid': '1ec1075c-c7d1-47ee-a601-6cd5e6170d5e'}
+```
+<br>
+<br>
