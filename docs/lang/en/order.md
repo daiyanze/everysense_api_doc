@@ -283,7 +283,7 @@ title: Everysense Order API
 ```
 <br>
 
-### 状態変更(一個)
+### Update content(Singular)
 <label class="label">POST</label>`/update_order`
 ``` 
 [
