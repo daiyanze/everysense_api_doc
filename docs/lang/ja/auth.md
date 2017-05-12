@@ -95,9 +95,17 @@ title: Everysense 認証API
 [
     "1ec1075c-c7d1-47ee-a601-6cd5e6170d5e", // ユーザーUUID
     "password123", // パスワード
-    "other name", // 表示名変更(変更しようとする場合に入力)
-    "john@email.com", // メールアドレス変更(変更しようとする場合に入力)
-    "pasword1234" // パスワード変更(変更しようとする場合に入力)
+    [
+        {
+            name: "other name", // 表示名変更(変更しようとする場合に入力)
+        },
+        {
+            password: "pasword1234" // パスワード変更(変更しようとする場合に入力)
+        },
+        {
+            mail: "john@email.com", // メールアドレス変更(変更しようとする場合に入力)
+        }
+    ]
 ]
 ```
 

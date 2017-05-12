@@ -96,9 +96,17 @@ title: Everysense Authentication API
 [
     "1ec1075c-c7d1-47ee-a601-6cd5e6170d5e",
     "password123",
-    "other name",
-    "john@email.com",
-    "pasword1234"
+    [
+        {
+            name: "other name",
+        },
+        {
+            password: "pasword1234"
+        },
+        {
+            mail: "john@email.com",
+        }
+    ]
 ]
 ```
 
