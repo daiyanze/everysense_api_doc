@@ -21,7 +21,7 @@ Object.keys(langs).forEach(function(i) {
     nav['lang/'+langs[i].abbrev] = [
       {title: langs[i].menu.home, path: '/lang/' + langs[i].abbrev + '/'},
       {title: langs[i].menu.api, type: 'dropdown', items: items[i]},
-      {title: 'ChangeLog', path: '/changelog', matchPath: /^\/changelog/},
+      {title: 'ChangeLog', path: '/changelog', matchPath: /^\/(changelog)/},
       {title: i, type: 'dropdown', items: dropDownItems}      
     ];
   }
@@ -30,14 +30,14 @@ Object.keys(langs).forEach(function(i) {
 nav['default'] = [
   {title: 'はじめに', path: '/'},
   {title: 'API説明書', type: 'dropdown', items: items['日本語']},
-  {title: 'ChangeLog', path: '/changelog', matchPath: /^\/changelog/},
+  {title: 'ChangeLog', path: '/changelog', matchPath: /^\/(changelog)/},
   {title: '日本語', type: 'dropdown', items: dropDownItems}
 ];
 
 nav['lang/en'] = [
   {title: 'Home', path: '/lang/en/'},
   {title: 'API Instructons', type: 'dropdown', items: items['English']},
-  {title: 'ChangeLog', path: '/changelog/', matchPath: /^\/changelog/},
+  {title: 'ChangeLog', path: '/changelog', matchPath: /^\/(changelog)/},
   {title: 'English', type: 'dropdown', items: dropDownItems}
 ];
 
