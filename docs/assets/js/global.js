@@ -57,3 +57,5 @@ var dropDownItems = [
   {title: 'English', path: '/lang/en/', matchPath: /^\/en/},
 ];
 
+var searchTags = ['english', 'ja']
+

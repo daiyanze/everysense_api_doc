@@ -21,3 +21,5 @@ langs['中文'] = {
     recipe: '菜单',
   }
 };
+
+searchTags.push('chs')
