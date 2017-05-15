@@ -42,10 +42,18 @@ nav['lang/en'] = [
 ];
 
 docute.init({
-  repo: 'every-sense/everysense_api_doc',
+  repo: 'EverysensseUD/everysense_api_doc',
   tocVisibleDepth: 4,
   debug: false,
   sidebar: true,
-  'edit-link': 'https://github.com/every-sense/everysense_api_doc/tree/master/docs/',
+  'edit-link': 'https://github.com/EverysensseUD/everysense_api_doc/tree/master/docs/',
   nav: nav,
+  plugins: [
+    docsearch({
+      apiKey: '65360cf9a91d87cd455d2b286d0d89ee',
+      indexName: 'docute',
+      tags: ['english', 'ja'],
+      url: 'http://dev.every-sense.com'
+    })
+  ]
 });
