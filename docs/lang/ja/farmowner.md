@@ -176,15 +176,13 @@ title: Everysense ファームオーナーAPI
 [
     "1ec1075c-c7d1-47ee-a601-6cd5e6170d5e", // ユーザーUUID
     "password1234", //　パスワード
-    [ // 変更しようとするオーナーフィールド
+    [ // 必要なオーナーフィールド
         {
             "name" : "キーワード",
-            "type" : "STRING",
             "value" : "#everypost #everystamp"
         },
         {
             "name" : "住所",
-            "type" : "LOCATION",
             "value" : "1-2-3 22号"
         },
         ...

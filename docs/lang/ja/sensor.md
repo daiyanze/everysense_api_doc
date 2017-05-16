@@ -153,14 +153,16 @@ title: Everysense センサーAPI
     "password1234", //　パスワード
     "ac9cf646-9071-410f-b7bb-f2ebb39f87fd", // センサーUUID
     "false", // 有効/無効
-    "location_type": "movable", // (undefined 未設定 / fix 固定 / movable 移動)
-    "location_point_prefectures": "東京都", // 都道府県
-    "location_point_city": "西東京市",
-    "location_point_address": "ある場所 1-2-3 11号",
-    "location_in_out": null, // (null 未設定 / indoor 屋内 / outdoor 屋外)
-    "location_detail": "白いビル",
-    "receive_window_close_time": "23:00", // "HH:mm" (UTC)
-    "receive_window_open_time": "9:00" // "HH:mm" (UTC)
+    {
+        "location_type": "movable", // (undefined 未設定 / fix 固定 / movable 移動)
+        "location_point_prefectures": "東京都", // 都道府県
+        "location_point_city": "西東京市",
+        "location_point_address": "ある場所 1-2-3 11号",
+        "location_in_out": null, // (null 未設定 / indoor 屋内 / outdoor 屋外)
+        "location_detail": "白いビル",
+        "receive_window_close_time": "23:00", // "HH:mm" (UTC)
+        "receive_window_open_time": "9:00" // "HH:mm" (UTC)
+    }
 ]
 ```
 <label class="label success">成功</label>
