@@ -50,8 +50,8 @@ docute.init({
   nav: nav,
   plugins: [
     docsearch({
-      apiKey: '',
-      indexName: 'docute',
+      apiKey: 'c12100613c9f84ddddedae4f090a52f4',
+      indexName: 'every-sense',
       tags: searchTags,
       url: 'http://dev.every-sense.com'
     })

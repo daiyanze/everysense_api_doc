@@ -1,6 +1,6 @@
 const pages = [
-  'auth', 'session', 'message', 'order', 'device', 'sensor', 'farm',
-  'farmowner', 'owner', 'autoaccept', 'notification', 'output', 'recipe',
+  'auth', 'session', 'message', 'order', 'device', 'sensor','farmowner',
+  'owner', 'autoaccept', 'notification', 'output', 'recipe',
 ];
 
 var langs = {
